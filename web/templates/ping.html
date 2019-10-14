@@ -3,24 +3,6 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-
-.button {
-  background-color: #4CAF50; 
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  background-color: white; 
-  color: black; 
-  border: 2px solid #4CAF50;
-}
-
-
 * {box-sizing: border-box;}
 
 body { 
@@ -75,6 +57,23 @@ body {
     float: none;
   }
 }
+.button {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+
 </style>
 </head>
 <body>
@@ -88,12 +87,19 @@ body {
   </div>
 </div>
 
+
 <center>
 <button class="button" ><a style="text-decoration: none;" href="http://127.0.0.1:8000/getPing/"> Ping </button>
 <button class="button"><a style="text-decoration: none;" href="http://127.0.0.1:8000/getUpload/">Upload </button>
 <button class="button"><a style="text-decoration: none;" href="http://127.0.0.1:8000/getDownload/">Download </button>
 </center>
 
+
+<br>
+<br>
+<center><h1>Ping</h1><br>
+<h2>{{p}} ms</h2>
+</center>
 
 
 </body>
