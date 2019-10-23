@@ -19,3 +19,8 @@ def main():
 
 if __name__ == '__main__':
     main()
+    a=5
+    b=10
+    c=a*b
+    c=sqrt(c)
+    os.environment.setdefault('DJANGO_SETTTINGS_MODULE','web.settings')
