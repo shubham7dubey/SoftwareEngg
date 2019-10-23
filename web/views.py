@@ -13,6 +13,11 @@ def getPing(request):
 	ping=round(ping,3)
 	{'p':ping}
 	return render(request,"ping.html",{'p':ping})
+def getsquare(n):
+	count=0
+	for i in range(n):
+		count+=i**2
+	return count
 
 def getUpload(request):
 	st = pyspeedtest.SpeedTest()
